@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="event"></ul>
+<script type="application/javascript">
+    function add(message) {
+        const el = document.createElement("li")
+        el.innerHTML = message;
+        document.getElementById("event").appendChild(el);
+    }
+
+    let eventSource = new EventSource("http://127.0.0.1:7020/temperature-stream")
+    eventSource.onmessage = e => {
+        console.log(e)
+        const t = e.data
+        add("message: " + t )
+    }
+    eventSource.onopen = e => add('Connection opened')
+    eventSource.onerror = e => add('Connection closed')
+</script>
+</body>
+</html>

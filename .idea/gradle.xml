@@ -3,7 +3,9 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/practise" />
         <option name="gradleHome" value="D:/application/gradle-6.3" />
         <option name="gradleJvm" value="11 (2)" />
@@ -15,13 +17,29 @@
         <option name="useQualifiedModuleNames" value="true" />
       </GradleProjectSettings>
       <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/sse" />
         <option name="gradleHome" value="D:/application/gradle-6.3" />
         <option name="gradleJvm" value="11 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/sse" />
+          </set>
+        </option>
+        <option name="useQualifiedModuleNames" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/sseRxjava" />
+        <option name="gradleHome" value="D:/application/gradle-6.3" />
+        <option name="gradleJvm" value="11 (2)" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/sseRxjava" />
           </set>
         </option>
         <option name="useQualifiedModuleNames" value="true" />
